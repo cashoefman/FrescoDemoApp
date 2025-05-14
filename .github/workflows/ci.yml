@@ -15,8 +15,9 @@ jobs:
     - uses: actions/checkout@v3
 
     - name: Clone Fresco Package
+      working-directory: ..
       run: |
-        git clone https://github.com/disruptiveio/Fresco.git ./Fresco
+        git clone https://github.com/disruptiveio/Fresco.git
 
     - name: Set up Xcode
       uses: maxim-lobanov/setup-xcode@v1
