@@ -1,6 +1,6 @@
 //
 //  StatefulPreviewWrapper.swift
-//  MuralistsApp
+//  FrescoDemoApp
 //
 //  Created by Cas Hoefman on 5/13/25.
 //

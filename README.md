@@ -2,7 +2,9 @@
 
 **FrescoDemoApp** is a SwiftUI demo project used to explore, preview, and validate the [Fresco](https://github.com/cashoefman/Fresco) design system.
 
-This app provides a clean, isolated environment for testing and visually verifying UI components, layout patterns, and tokens defined in the `Fresco` Swift Package.
+This app provides a clean, isolated environment for testing and visually verifying UI components, layout patterns, and tokens defined in the [`Fresco` Swift Package](https://github.com/cashoefman/Fresco).
+
+GitHub repo for this project: [FrescoDemoApp](https://github.com/cashoefman/FrescoDemoApp)
 
 ---
 
@@ -42,6 +44,19 @@ FrescoDemoApp/
 
 ---
 
+## Component Categories
+
+- Buttons
+- Inputs
+- Typography
+- Layout
+- Feedback
+- Media
+- Interactive
+- Data Display
+
+---
+
 ## Component Preview Navigation
 
 You can modify `ContentView.swift` to use:
@@ -56,12 +71,12 @@ You can modify `ContentView.swift` to use:
 
 Fresco is a modular SwiftUI design system optimized for reuse across iOS apps.
 
-See the full system: [Fresco GitHub Repo](https://github.com/cashoefman/Fresco)
+View the source code: [Fresco GitHub Repo](https://github.com/cashoefman/Fresco)
 
 ---
 
 ## Requirements
 
-- Xcode 15.0+
-- iOS 15.0+
+- Xcode 16.3+
+- iOS 18.0+
 - Swift Package Manager

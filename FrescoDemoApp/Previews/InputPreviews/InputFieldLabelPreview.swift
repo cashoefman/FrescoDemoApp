@@ -1,8 +1,8 @@
 //
 //  InputFieldLabelPreview.swift
-//  FrescoPreview
+//  FrescoDemoApp
 //
-//  Auto-generated for InputFieldLabel on 5/13/25
+//  Created by Cas Hoefman on 5/14/25.
 //
 
 import SwiftUI

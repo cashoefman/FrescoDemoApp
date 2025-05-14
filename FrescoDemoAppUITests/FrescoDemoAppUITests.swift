@@ -1,6 +1,6 @@
 //
 //  FrescoDemoAppUITests.swift
-//  FrescoDemoAppUITests
+//  FrescoDemoApp
 //
 //  Created by Cas Hoefman on 5/14/25.
 //
