@@ -1,5 +1,3 @@
-name: CI
-
 on:
   push:
     branches: [main]
@@ -24,15 +22,18 @@ jobs:
       with:
         xcode-version: '16.2'
 
+    - name: List Available Simulators
+      run: xcrun simctl list devices
+
     - name: Build Project
       run: |
-        xcodebuild -scheme FrescoDemoApp -destination 'platform=iOS Simulator,OS=latest,name=iPhone 16 Pro' clean build CODE_SIGNING_ALLOWED=NO
+        xcodebuild -scheme FrescoDemoApp -destination 'platform=iOS Simulator,OS=latest' clean build CODE_SIGNING_ALLOWED=NO
 
     - name: Run Unit Tests
       run: |
         xcodebuild test \
           -scheme FrescoDemoApp \
-          -destination 'platform=iOS Simulator,OS=latest,name=iPhone 16 Pro' \
+          -destination 'platform=iOS Simulator,OS=latest' \
           CODE_SIGNING_ALLOWED=NO
 
     - name: Run SwiftLint
