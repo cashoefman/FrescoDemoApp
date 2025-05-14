@@ -1,4 +1,3 @@
-//
 //  ThemeViewModel.swift
 //  FrescoDemoApp
 //
@@ -11,10 +10,9 @@ import SwiftUI
 
 @Observable
 final class ThemeViewModel {
-    var colorScheme: ColorScheme? = nil
+    var colorScheme: ColorScheme?
 
     func toggleDarkMode(_ isOn: Bool) {
         colorScheme = isOn ? .dark : .light
     }
 }
-

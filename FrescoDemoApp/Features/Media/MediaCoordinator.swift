@@ -1,6 +1,6 @@
 //
 //  MediaCoordinator.swift
-///  FrescoDemoApp
+//  FrescoDemoApp
 //
 //  Created by Cas Hoefman on 5/14/25.
 //

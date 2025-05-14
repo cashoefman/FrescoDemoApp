@@ -41,4 +41,3 @@ struct LayoutView: View {
         .background(AppColors.appBackground)
     }
 }
-

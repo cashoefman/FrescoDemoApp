@@ -16,4 +16,3 @@ import Fresco
     .padding()
     .background(AppColors.appBackground)
 }
-

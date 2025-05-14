@@ -1,5 +1,11 @@
 # FrescoDemoApp
 
+![License](https://img.shields.io/badge/license-MIT-blue.svg)
+![iOS](https://img.shields.io/badge/iOS-18%2B-lightgrey.svg)
+![Swift](https://img.shields.io/badge/Swift-6.1-orange.svg)
+![SPM](https://img.shields.io/badge/SPM-Compatible-brightgreen.svg)
+![Build](https://github.com/disruptiveio/FrescoDemoApp/actions/workflows/ci.yml/badge.svg)
+
 **FrescoDemoApp** is a SwiftUI demo project used to explore, preview, and validate the [Fresco](https://github.com/disruptiveio/Fresco) design system.
 
 This app provides a clean, isolated environment for testing and visually verifying UI components, layout patterns, and tokens defined in the [`Fresco` Swift Package](https://github.com/disruptiveio/Fresco).
