@@ -6,16 +6,16 @@
 //
 
 import SwiftUI
+import Fresco
 
 struct ContentView: View {
     var body: some View {
-        VStack {
-            Image(systemName: "globe")
-                .imageScale(.large)
-                .foregroundStyle(.tint)
-            Text("Hello, world!")
+        VStack(spacing: 16) {
+            TitleText("Fresco Demo")
+            PrimaryButton(title: "Enter Here") {}
         }
         .padding()
+        .background(AppColors.appBackground)
     }
 }
 

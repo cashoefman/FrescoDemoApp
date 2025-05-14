@@ -6,6 +6,10 @@
 	objectVersion = 77;
 	objects = {
 
+/* Begin PBXBuildFile section */
+		A171A7B62DD459E80089C52B /* Fresco in Frameworks */ = {isa = PBXBuildFile; productRef = A171A7B52DD459E80089C52B /* Fresco */; };
+/* End PBXBuildFile section */
+
 /* Begin PBXContainerItemProxy section */
 		A171A27E2DD455530089C52B /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
@@ -52,6 +56,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A171A7B62DD459E80089C52B /* Fresco in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -78,6 +83,7 @@
 				A171A2722DD455520089C52B /* FrescoDemoApp */,
 				A171A2802DD455530089C52B /* FrescoDemoAppTests */,
 				A171A28A2DD455530089C52B /* FrescoDemoAppUITests */,
+				A171A7B42DD459E80089C52B /* Frameworks */,
 				A171A2712DD455520089C52B /* Products */,
 			);
 			sourceTree = "<group>";
@@ -90,6 +96,13 @@
 				A171A2872DD455530089C52B /* FrescoDemoAppUITests.xctest */,
 			);
 			name = Products;
+			sourceTree = "<group>";
+		};
+		A171A7B42DD459E80089C52B /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -112,6 +125,7 @@
 			);
 			name = FrescoDemoApp;
 			packageProductDependencies = (
+				A171A7B52DD459E80089C52B /* Fresco */,
 			);
 			productName = FrescoDemoApp;
 			productReference = A171A2702DD455520089C52B /* FrescoDemoApp.app */;
@@ -195,6 +209,9 @@
 			);
 			mainGroup = A171A2672DD455520089C52B;
 			minimizedProjectReferenceProxies = 1;
+			packageReferences = (
+				A171A29A2DD456140089C52B /* XCLocalSwiftPackageReference "../Fresco" */,
+			);
 			preferredProjectObjectVersion = 77;
 			productRefGroup = A171A2712DD455520089C52B /* Products */;
 			projectDirPath = "";
@@ -400,6 +417,8 @@
 				DEVELOPMENT_TEAM = 7VSVAXS4SU;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_CFBundleDisplayName = "Fresco Demo App";
+				INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.developer-tools";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
@@ -412,6 +431,10 @@
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = app.muralists.FrescoDemoApp;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
+				SUPPORTS_XR_DESIGNED_FOR_IPHONE_IPAD = NO;
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -428,6 +451,8 @@
 				DEVELOPMENT_TEAM = 7VSVAXS4SU;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_CFBundleDisplayName = "Fresco Demo App";
+				INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.developer-tools";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
@@ -440,6 +465,10 @@
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = app.muralists.FrescoDemoApp;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
+				SUPPORTS_XR_DESIGNED_FOR_IPHONE_IPAD = NO;
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -558,6 +587,21 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCLocalSwiftPackageReference section */
+		A171A29A2DD456140089C52B /* XCLocalSwiftPackageReference "../Fresco" */ = {
+			isa = XCLocalSwiftPackageReference;
+			relativePath = ../Fresco;
+		};
+/* End XCLocalSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		A171A7B52DD459E80089C52B /* Fresco */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = A171A29A2DD456140089C52B /* XCLocalSwiftPackageReference "../Fresco" */;
+			productName = Fresco;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = A171A2682DD455520089C52B /* Project object */;
 }
