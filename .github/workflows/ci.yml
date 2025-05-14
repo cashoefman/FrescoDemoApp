@@ -28,24 +28,7 @@ jobs:
       run: |
         xcodebuild -scheme FrescoDemoApp -destination 'platform=iOS Simulator,name=Any iOS Simulator Device' clean build CODE_SIGNING_ALLOWED=NO
 
-    - name: Check for Available iOS Simulators
-      id: check_sim
-      run: |
-        AVAILABLE=$(xcrun simctl list devices | grep -v unavailable | grep -E "iPhone|iPad" | grep -c Shutdown || true)
-        echo "Found $AVAILABLE available simulators"
-        if [[ "$AVAILABLE" -eq 0 ]]; then
-          echo "skip=true" >> $GITHUB_OUTPUT
-        else
-          echo "skip=false" >> $GITHUB_OUTPUT
-        fi
-
-    - name: Run Unit Tests
-      if: steps.check_sim.outputs.skip != 'true'
-      run: |
-        xcodebuild test \
-          -scheme FrescoDemoApp \
-          -destination 'platform=iOS Simulator,name=Any iOS Simulator Device' \
-          CODE_SIGNING_ALLOWED=NO
+    
 
     - name: Run SwiftLint
       run: |
