@@ -27,6 +27,9 @@ jobs:
     - name: List Available Simulators
       run: xcrun simctl list devices
 
+    - name: Boot iPhone 15 Simulator
+      run: xcrun simctl boot "iPhone 15" || true # Ignore error if already booted
+
     - name: Build Project
       run: |
         xcodebuild -scheme FrescoDemoApp -destination 'platform=iOS Simulator,name=iPhone 15' clean build CODE_SIGNING_ALLOWED=NO
