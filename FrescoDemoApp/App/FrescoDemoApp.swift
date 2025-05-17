@@ -6,18 +6,17 @@
 //
 
 import SwiftUI
-import Fresco // 👈 Import your Fresco package explicitly
+import Fresco
 
 @main
 struct FrescoDemoApp: App {
-    @StateObject private var themer = Themer.shared // 👈 Shared theme manager
+    @StateObject private var themer = Themer.shared
 
     var body: some Scene {
         WindowGroup {
-            ContentView()
-                .environmentObject(themer) // 👈 Provide Themer to all views
+            AppCoordinatorView()
+                .environmentObject(themer)
                 .onAppear {
-                    // Set initial theme explicitly; later we can connect it to system color scheme
                     themer.updateColorScheme(.light)
                 }
         }
