@@ -11,7 +11,10 @@ import Fresco
 struct AppCoordinatorView: View {
     @EnvironmentObject var themer: Themer
     @State private var currentThemeIndex = 0
-    private let availableThemes = ThemeManager.shared.loadedThemes
+
+    private var availableThemes: [CustomThemeData] {
+        themer.availableThemes
+    }
 
     var body: some View {
         NavigationStack {

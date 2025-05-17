@@ -10,7 +10,7 @@ import Fresco
 
 @main
 struct FrescoDemoApp: App {
-    @StateObject private var themer = Themer.shared
+    @StateObject private var themer = Themer(themeManager: ThemeManager())
 
     var body: some Scene {
         WindowGroup {
